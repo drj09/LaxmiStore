@@ -1,0 +1,2 @@
+# LaxmiStores
+ website for laxmistores
