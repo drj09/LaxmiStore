@@ -1,0 +1,19 @@
+.indie{
+    font-family: 'Indie Flower', cursive;
+}
+.amatic{
+    font-family: 'Amatic SC', cursive;
+}
+.achievementsodd{
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-left: solid orange; 
+    border-right: solid greenyellow;
+}
+
+.achievementseve{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-right: solid orange;
+    border-left: solid greenyellow;
+}

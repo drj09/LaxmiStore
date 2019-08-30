@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/lxm_css.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower&display=swap" rel="stylesheet"> 
+        
+    </head>
+    <body>
+        <div class="header"></div>
+    
+        <!--Write all html code here all libraries and essential files are imported in template-->
+                
+        
+        <div class="uk-section uk-section-muted uk-margin-remove">
+                <div class="uk-container">
+            
+                    <h3>Contact Us</h3>
+                    <p>For any queries, questions or support</p>
+                    <div class="uk-grid-match uk-child-width-1-2@l" uk-grid>
+                       
+                        <div>
+                            <p>
+                                <span uk-icon="icon: clock ;ratio: 2"></span> 9:00 AM to 8:00 PM
+                                <br>
+                                <span uk-icon="icon: mail ;ratio: 2"></span> Laxmistore@gmail.com
+                                <br>
+                                <span uk-icon="icon: receiver ;ratio: 2"></span> XXXX-XXXXX-XX
+                                <br>
+                                <span uk-icon="icon: home ;ratio: 2"></span> B-1606 Shatstri Nagar Delhi-110052</p>
+                                
+                        </div>
+                        <div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.5360830879895!2d77.17850732523998!3d28.673606298662385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02657982d7c9%3A0xefdd43427c351d14!2sLaxmi%20Store!5e0!3m2!1sen!2sin!4v1567190879158!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+
+
+
+
+
+       
+        <div class="footer"></div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script>
+                $.get("assests/header.html", function(data) {
+                    $(".header").html(data);
+                }); 
+                $.get("assests/footer.html", function(data) {
+                    $(".footer").html(data);
+                });
+        </script>
+            
+    </body>
+</html>
+
