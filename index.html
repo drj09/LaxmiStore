@@ -9,12 +9,24 @@
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower&display=swap" rel="stylesheet"> 
-        
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $.get("assests/header.html", function(data) {
+                $(".header").html(data);
+            }); 
+            $.get("assests/footer.html", function(data) {
+                $(".footer").html(data);
+            });
+        </script>
     </head>
     <body>
         <div class="header"></div>
     
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 31100; repeat: true"  uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 1000;max-height: 500">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"   uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 1000;max-height: 500">
 
             <ul class="uk-slideshow-items" >
                 <li>
@@ -52,9 +64,9 @@
         </div>
 
 
-        <div class="uk-margin-medium uk-margin-xlarge-left uk-margin-xlarge-right">
+        <div class="uk-margin-large uk-margin-xlarge-left uk-margin-xlarge-right" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: false">
             <h1 class="uk-heading-line uk-text-center indie"><span><b>What we do</b></span></h1> 
-            <div class="uk-flex uk-flex-center uk-flex-wrap uk-flex-wrap-around uk-padding-small">
+            <div class="uk-flex uk-flex-center uk-flex-wrap uk-flex-wrap-around uk-padding-small uk-margin-large-top uk-margin-large-bottom">
                 <div class="uk-width-medium uk-card uk-card-hover uk-card-body uk-padding-remove" style="border-radius: 20px;">
                     <div class="uk-card-media-top" >
                         <img src="https://code.org/images/social-media/code-2018-creativity.png" alt="" >
@@ -95,16 +107,17 @@
             </div>
         </div>
 
-        <div class="uk-margin-medium uk-margin-xlarge-left uk-margin-xlarge-right">
+
+        <div class="uk-margin-xlarge uk-margin-xlarge-left uk-margin-xlarge-right" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: false">
             <h1 class="uk-heading-line uk-text-center indie"><span><b>Achievements</b></span></h1>
             
             
-            <div class="uk-child-width-1-2@l uk-text-center" uk-grid="parallax: 150">
+            <div class="uk-child-width-1-2@l uk-margin-large-top uk-text-center" uk-grid="parallax: 150">
                 <div>
                     <div class="uk-card uk-card-default uk-card-body achievementsodd">Item</div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-default uk-card-body achievementseve">Item</div>
+                    <div class="uk-card uk-card-default uk-margin-large-top uk-card-body achievementseve">Item</div>
                 </div>
             </div>
             <div class="uk-child-width-1-2@l uk-text-center" uk-grid="parallax: 150">
@@ -112,17 +125,16 @@
                     <div class="uk-card uk-card-default uk-card-body achievementsodd">Item</div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-default uk-card-body achievementseve">Item</div>
+                    <div class="uk-card uk-card-default uk-margin-large-top uk-card-body achievementseve">Item</div>
                 </div>
             </div>
         </div>
             
 
 
-
-        <div class="uk-margin-medium uk-margin-xlarge-left uk-margin-xlarge-right ">
+        <div class="uk-margin-large uk-margin-xlarge-left uk-margin-xlarge-right " uk-scrollspy="cls: uk-animation-slide-bottom;  delay: 300; repeat: false">
             <h1 class="uk-heading-line uk-text-center indie"><span><b>Our Clients</b></span></h1>
-            <div class="uk-position-relative uk-visible-toggle uk-align-center uk-light uk-margin-xlarge-left uk-margin-xlarge-right" tabindex="-1" uk-slider="autoplay:true;autoplay-interval:1500;">
+            <div class="uk-position-relative uk-visible-toggle uk-align-center uk-margin-large-top uk-margin-large-bottom uk-light uk-margin-xlarge-left uk-margin-xlarge-right" tabindex="-1" uk-slider="autoplay:true;autoplay-interval:1500;">
                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
                     <li>
                         <img src="https://img.etimg.com/thumb/msid-64395377,width-672,resizemode-4,imgsize-30698/wipro-infra-sets-up-industrial-automation-unit-in-india.jpg" alt="">
@@ -165,21 +177,9 @@
         </div>
                 
        
-        <div class="footer"></div>
+        <div class="footer" ></div>
 
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous">
-        </script>
-        <script>
-            $.get("assests/header.html", function(data) {
-                $(".header").html(data);
-            }); 
-            $.get("assests/footer.html", function(data) {
-                $(".footer").html(data);
-            });
-        </script>
+        
             
     </body>
 </html>
